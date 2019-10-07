@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tp1.MainWindowController">
+   <top>
+      <Label text="Configuration de votre avatar" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+      <Pane prefHeight="345.0" prefWidth="332.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="couleurCheveux" layoutX="25.0" layoutY="40.0" prefWidth="150.0" promptText="Couleur de cheveux" />
+            <Slider fx:id="longueurCheveux" layoutX="175.0" layoutY="202.0" />
+            <Label layoutX="20.0" layoutY="200.0" text="Longueur des cheveux" />
+            <ComboBox fx:id="formeVisage" layoutX="25.0" layoutY="275.0" prefWidth="150.0" promptText="Forme du visage" />
+            <ListView fx:id="couleurYeux" layoutX="26.0" layoutY="106.0" prefHeight="54.0" prefWidth="148.0" />
+            <Label layoutX="25.0" layoutY="83.0" prefHeight="17.0" prefWidth="108.0" text="Couleur des yeux" />
+         </children>
+      </Pane>
+   </left>
+   <right>
+      <Canvas fx:id="avatar" height="294.0" width="233.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets right="29.0" />
+         </BorderPane.margin>
+      </Canvas>
+   </right>
+</BorderPane>
